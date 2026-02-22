@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e0e0e0;
+}
+
+.keyboard{
+    background:#e0e0e0;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:
+        9px 9px 16px #bebebe,
+       -9px -9px 16px #ffffff;
+}
+
+.row{
+    display:flex;
+    justify-content:center;
+    margin-bottom:15px;
+}
+
+.key{
+    width:55px;
+    height:55px;
+    margin:6px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e0e0e0;
+    border-radius:12px;
+    box-shadow:
+        inset 5px 5px 10px #bebebe,
+        inset -5px -5px 10px #ffffff;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.key:active{
+    box-shadow:
+        inset -5px -5px 10px #bebebe,
+        inset 5px 5px 10px #ffffff;
+}
+
+.wide{
+    width:300px;
+}
